@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  text-align: center;
+  background-color: #f0e68c;
+}
+
+body {
+  background-color: black;
+}
+
+.glow {
+  font-size: 80px;
+  color: #ffff00;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffff00, 0 0 20px #e60073, 0 0 30px #ffff00, 0 0 40px #e60073, 0 0 50px #ffff00, 0 0 60px #e60073, 0 0 70px #ffff00;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #ffff00, 0 0 30px #ff4da6, 0 0 40px #ffff00, 0 0 50px #ff4da6, 0 0 60px #ffff00, 0 0 70px #ff4da6, 0 0 80px #ffff00;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="w3-bar w3-yellow">
+    <a href="#" class="w3-bar-item w3-button"><i class='fas fa-dumbbell'></i>Programmes</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">More</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="page3.html" class="w3-bar-item w3-button">Contact</a>
+      </div> 
+    </div>
+    <input type="text" class="w3-bar-item w3-input w3-light-grey" placeholder="Search..">
+    <button class="w3-bar-item w3-pale-yellow w3-button"><i class="fa fa-search"></i></button>
+  </div>
+
+<h1 class="glow" style="font-family:STENCIL">Our Specials!</h1>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3 style="font-size:150%; font-family:Kristen ITC"><strong>Basic Strength & Conditioning</strong></h3>
+      <img src="strength and conditioning.jpg" alt="Strength and Conditioning Workout" style="width:100%">
+      <p>We aim to help those with knee joint and high blood pressure problems improve in strength and cardiovascular fitness. Basic strength and conditioning workouts, carefully structured and led by experienced professionals will help you enhance your health and wellness naturally! Sign up now!</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3 style="font-size:150%; font-family:Kristen ITC"><strong>Functional Fitness Training</strong></h3>
+      <img src="hiit workout.jpg" alt="Functional Fitness Training" style="width:100%">
+      <p>Looking to build muscle and shed fat ASAP? Dreading trudging on the treadmill and pumping iron everyday? Well, we have just the programme for you! This programme focuses on an effective yet fun regime that guides you on how to go about your 'body recomposition'! Expect explosive workouts simultaneously focusing on multiple muscle groups. What are you waiting for then?</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3 style="font-size:150%; font-family:Kristen ITC"><strong>ActiveSG Virtual Fitness</strong></h3>
+      <img src="activesg virtual fitness.jpg" alt="ActiveSG Virtual Fitness" style="width:100%">
+      <p>ActiveSG fitness programmes are now online! Given the recent Covid-19 pandemic, many hesitate to visit gyms. Hence, we have introduced virtual fitness classes where you can, in the comfort and privacy of your own home, get your daily dose of endorphins! All you need is a Zoom account and a stable Wi-Fi connection! Participate in expertly designed home-based workout routines without using any equipment! Sign up now to start training!</p>
+    </div>
+  </div>
+  </div>
+<br>
+<footer class="w3-container w3-center w3-black w3-large">
+  <p style="text-align:center; color:yellow; font-size:150%; font-family:Forte">Click <a href="https://www.myactivesg.com/Programmes">here</a> to view more programmes!</p>
+</footer>
+
+</body>
+</html>   
+
